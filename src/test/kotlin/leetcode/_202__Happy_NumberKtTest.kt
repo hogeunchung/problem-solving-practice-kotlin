@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test
 
 internal class _202__Happy_NumberKtTest {
     @Test
-    fun `test1`() {
+    fun test1() {
         // Arrange
         val expected = true
 
@@ -17,7 +17,7 @@ internal class _202__Happy_NumberKtTest {
     }
 
     @Test
-    fun `test2`() {
+    fun test2() {
         // Arrange
         val expected = false
 

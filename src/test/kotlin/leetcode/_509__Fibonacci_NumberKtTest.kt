@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test
 
 internal class _509__Fibonacci_NumberKtTest {
     @Test
-    fun `Test1`() {
+    fun test1() {
         // Arrange
         val expected = 1
 
@@ -17,7 +17,7 @@ internal class _509__Fibonacci_NumberKtTest {
     }
 
     @Test
-    fun `Test2`() {
+    fun test2() {
         // Arrange
         val expected = 2
 
