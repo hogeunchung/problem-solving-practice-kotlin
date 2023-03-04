@@ -1,7 +1,7 @@
 package leetcode
 
+import org.junit.jupiter.api.Assertions.assertArrayEquals
 import org.junit.jupiter.api.Test
-import kotlin.test.assertContentEquals
 
 class _344__Reverse_StringKtTest {
 
@@ -15,7 +15,7 @@ class _344__Reverse_StringKtTest {
         reverseString(s = actual)
 
         // Assert
-        assertContentEquals(expected, actual)
+        assertArrayEquals(expected, actual)
     }
 
     @Test
@@ -28,6 +28,6 @@ class _344__Reverse_StringKtTest {
         reverseString(s = actual)
 
         // Assert
-        assertContentEquals(expected, actual)
+        assertArrayEquals(expected, actual)
     }
 }

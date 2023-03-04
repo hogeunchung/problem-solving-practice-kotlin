@@ -1,7 +1,7 @@
 package leetcode
 
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
-import kotlin.test.assertEquals
 
 internal class _58__Length_of_Last_WordKtTest {
     @Test

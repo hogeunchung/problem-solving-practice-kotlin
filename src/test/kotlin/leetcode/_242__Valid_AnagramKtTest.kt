@@ -1,7 +1,7 @@
 package leetcode
 
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
-import kotlin.test.assertEquals
 
 internal class _242__Valid_AnagramKtTest {
     @Test

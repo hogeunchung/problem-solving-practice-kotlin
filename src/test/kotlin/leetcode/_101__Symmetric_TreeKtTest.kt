@@ -1,8 +1,8 @@
 package leetcode
 
 import leetcode.dataStructure.TreeNode
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
-import kotlin.test.assertEquals
 
 class _101__Symmetric_TreeKtTest {
 

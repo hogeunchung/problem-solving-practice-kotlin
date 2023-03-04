@@ -1,5 +1,6 @@
 package leetcode
 
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 class _455__Assign_CookiesKtTest {
@@ -13,7 +14,7 @@ class _455__Assign_CookiesKtTest {
         val actual = findContentChildren(g = intArrayOf(1, 2, 3), s = intArrayOf(1, 1))
 
         // Assert
-        kotlin.test.assertEquals(expected, actual)
+        assertEquals(expected, actual)
     }
 
     @Test
@@ -25,6 +26,6 @@ class _455__Assign_CookiesKtTest {
         val actual = findContentChildren(g = intArrayOf(1, 2), s = intArrayOf(1, 2, 3))
 
         // Assert
-        kotlin.test.assertEquals(expected, actual)
+        assertEquals(expected, actual)
     }
 }
