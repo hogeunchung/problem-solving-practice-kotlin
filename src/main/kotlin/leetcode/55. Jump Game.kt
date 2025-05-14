@@ -23,3 +23,22 @@ fun canJump(nums: IntArray): Boolean {
 
     return false
 }
+
+fun canJump2(nums: IntArray): Boolean {
+    val n = nums.size
+    val visits = BooleanArray(n)
+    visits[0] = true
+
+    for (i in 0 until n) {
+        if (visits[i]) {
+            if (i + nums[i] >= n - 1) {
+                return true
+            }
+            for (j in i + 1..i + nums[i]) {
+                visits[j] = true
+            }
+        }
+    }
+
+    return false
+}
