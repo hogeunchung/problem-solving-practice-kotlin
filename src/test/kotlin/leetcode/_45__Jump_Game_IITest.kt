@@ -28,4 +28,16 @@ internal class _45__Jump_Game_IITest {
         // Assert
         assertEquals(expected, actual)
     }
+
+    @Test
+    fun test3() {
+        // Arrange
+        val expected = 0
+
+        // Act
+        val actual = jump(intArrayOf(0))
+
+        // Assert
+        assertEquals(expected, actual)
+    }
 }
