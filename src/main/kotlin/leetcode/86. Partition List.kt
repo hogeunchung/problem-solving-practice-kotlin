@@ -11,9 +11,6 @@ fun partition(head: ListNode?, x: Int): ListNode? {
     var rightCurr = rightHead
 
     while (curr != null) {
-        val next = curr.next
-        curr.next = null
-
         if (curr.`val` < x) {
             leftCurr.next = curr
             leftCurr = leftCurr.next!!
@@ -22,9 +19,10 @@ fun partition(head: ListNode?, x: Int): ListNode? {
             rightCurr = rightCurr.next!!
         }
 
-        curr = next
+        curr = curr.next
     }
 
+    rightCurr.next = null
     leftCurr.next = rightHead.next
     return leftHead.next
 }
