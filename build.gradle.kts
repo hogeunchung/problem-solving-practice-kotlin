@@ -1,24 +1,30 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.7.10"
+    val kotlinVersion = "2.0.0"
+    kotlin("jvm") version kotlinVersion
 }
 
-group = "wafflejuice"
+group = "hogeunchung"
 version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
 }
 
-dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter:5.9.2")
-}
+java.sourceCompatibility = JavaVersion.VERSION_21
 
-tasks.test {
-    useJUnitPlatform()
+dependencies {
+    testImplementation("org.junit.jupiter:junit-jupiter:5.12.2")
 }
 
 tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
+    compilerOptions {
+        jvmTarget.set(JvmTarget.JVM_21)
+    }
+}
+
+tasks.withType<Test> {
+    useJUnitPlatform()
 }
