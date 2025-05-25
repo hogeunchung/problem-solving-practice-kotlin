@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    val kotlinVersion = "2.0.0"
+    val kotlinVersion = "2.1.21"
     kotlin("jvm") version kotlinVersion
 }
 
@@ -17,6 +17,7 @@ java.sourceCompatibility = JavaVersion.VERSION_21
 
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter:5.12.2")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
 tasks.withType<KotlinCompile> {
@@ -25,6 +26,6 @@ tasks.withType<KotlinCompile> {
     }
 }
 
-tasks.withType<Test> {
+tasks.test {
     useJUnitPlatform()
 }
