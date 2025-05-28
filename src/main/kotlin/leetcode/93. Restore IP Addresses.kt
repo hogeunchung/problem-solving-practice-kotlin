@@ -16,10 +16,7 @@ fun restoreIpAddresses(s: String): List<String> {
                     s.substring(k),
                 )
 
-                println(subIps)
-                if (subIps.all { subIp -> subIp == "0" || (subIp[0] != '0' && subIp.toInt() <= 255) }) {
-
-                    println("[ADD] $subIps")
+                if (subIps.all { subIp -> subIp == "0" || (subIp[0] != '0' && subIp.length <= 3 && subIp.toInt() <= 255) }) {
                     result.add(subIps.joinToString("."))
                 }
             }

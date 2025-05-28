@@ -40,4 +40,16 @@ class _93__Restore_IP_AddressesTest {
         // Assert
         assertEquals(expected, actual)
     }
+
+    @Test
+    fun test3() {
+        // Arrange
+        val expected = listOf("1.0.10.23", "1.0.102.3", "10.1.0.23", "10.10.2.3", "101.0.2.3")
+
+        // Act
+        val actual = restoreIpAddresses(s = "0279245587303")
+
+        // Assert
+        assertEquals(expected, actual)
+    }
 }
