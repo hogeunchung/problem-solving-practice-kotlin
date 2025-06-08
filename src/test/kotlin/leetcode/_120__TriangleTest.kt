@@ -7,25 +7,25 @@ internal class _120__TriangleTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 11
 
-        // Act
+        // When
         val actual = minimumTotal(listOf(listOf(2), listOf(3, 4), listOf(6, 5, 7), listOf(4, 1, 8, 3)))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = -10
 
-        // Act
+        // When
         val actual = minimumTotal(listOf(listOf(-10)))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

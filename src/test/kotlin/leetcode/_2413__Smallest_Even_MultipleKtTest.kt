@@ -7,25 +7,25 @@ class _2413__Smallest_Even_MultipleKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 10
 
-        // Act
+        // When
         val actual = smallestEvenMultiple(n = 5)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 6
 
-        // Act
+        // When
         val actual = smallestEvenMultiple(n = 6)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

@@ -7,25 +7,25 @@ internal class _215__Kth_Largest_Element_in_an_ArrayTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 5
 
-        // Act
+        // When
         val actual = findKthLargest(nums = intArrayOf(3, 2, 1, 5, 6, 4), k = 2)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 4
 
-        // Act
+        // When
         val actual = findKthLargest(nums = intArrayOf(3, 2, 3, 1, 2, 4, 5, 5, 6), k = 4)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

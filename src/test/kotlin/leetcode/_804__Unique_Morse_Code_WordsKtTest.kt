@@ -7,25 +7,25 @@ class _804__Unique_Morse_Code_WordsKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 2
 
-        // Act
+        // When
         val actual = uniqueMorseRepresentations(words = arrayOf("gin", "zen", "gig", "msg"))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 1
 
-        // Act
+        // When
         val actual = uniqueMorseRepresentations(words = arrayOf("a"))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

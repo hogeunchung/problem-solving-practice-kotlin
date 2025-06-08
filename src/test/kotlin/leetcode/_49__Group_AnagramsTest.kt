@@ -7,13 +7,13 @@ internal class _49__Group_AnagramsTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = listOf(listOf("bat"), listOf("nat", "tan"), listOf("ate", "eat", "tea"))
 
-        // Act
+        // When
         val actual = groupAnagrams(strs = arrayOf("eat", "tea", "tan", "ate", "nat", "bat"))
 
-        // Assert
+        // Then
         assertAll(
             { assertEquals(expected.size, actual.size) },
             { actual.containsAll(expected) },
@@ -23,13 +23,13 @@ internal class _49__Group_AnagramsTest {
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = listOf(listOf("bat"))
 
-        // Act
+        // When
         val actual = groupAnagrams(strs = arrayOf(""))
 
-        // Assert
+        // Then
         assertAll(
             { assertEquals(expected.size, actual.size) },
             { actual.containsAll(expected) },
@@ -39,13 +39,13 @@ internal class _49__Group_AnagramsTest {
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = listOf(listOf("a"))
 
-        // Act
+        // When
         val actual = groupAnagrams(strs = arrayOf("a"))
 
-        // Assert
+        // Then
         assertAll(
             { assertEquals(expected.size, actual.size) },
             { actual.containsAll(expected) },

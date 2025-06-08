@@ -7,50 +7,50 @@ internal class _394__Decode_StringTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = "aaabcbc"
 
-        // Act
+        // When
         val actual = decodeString(s = "3[a]2[bc]")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = "accaccacc"
 
-        // Act
+        // When
         val actual = decodeString(s = "3[a2[c]]")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = "abcabccdcdcdef"
 
-        // Act
+        // When
         val actual = decodeString(s = "2[abc]3[cd]ef")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test4() {
-        // Arrange
+        // Given
         val expected =
             "leetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcode"
 
-        // Act
+        // When
         val actual = decodeString(s = "100[leetcode]")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

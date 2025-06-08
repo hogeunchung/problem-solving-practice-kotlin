@@ -7,25 +7,25 @@ internal class _409__Longest_PalindromeKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 7
 
-        // Act
+        // When
         val actual = leetcode.longestPalindrome("abccccdd")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 1
 
-        // Act
+        // When
         val actual = leetcode.longestPalindrome("a")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

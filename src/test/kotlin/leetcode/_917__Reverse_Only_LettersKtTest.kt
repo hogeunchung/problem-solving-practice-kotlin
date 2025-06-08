@@ -7,37 +7,37 @@ class _917__Reverse_Only_LettersKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = "dc-ba"
 
-        // Act
+        // When
         val actual = reverseOnlyLetters(s = "ab-cd")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = "j-Ih-gfE-dCba"
 
-        // Act
+        // When
         val actual = reverseOnlyLetters(s = "a-bC-dEf-ghIj")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = "Qedo1ct-eeLg=ntse-T!"
 
-        // Act
+        // When
         val actual = reverseOnlyLetters(s = "Test1ng-Leet=code-Q!")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

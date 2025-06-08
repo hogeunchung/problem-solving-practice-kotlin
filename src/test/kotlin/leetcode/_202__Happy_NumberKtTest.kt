@@ -6,25 +6,25 @@ import org.junit.jupiter.api.Test
 internal class _202__Happy_NumberKtTest {
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = true
 
-        // Act
+        // When
         val actual = isHappy(19)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = false
 
-        // Act
+        // When
         val actual = isHappy(2)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

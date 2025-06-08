@@ -7,25 +7,25 @@ class _2469__Convert_the_TemperatureKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = doubleArrayOf(309.65000, 97.70000)
 
-        // Act
+        // When
         val actual = convertTemperature(celsius = 36.50)
 
-        // Assert
+        // Then
         assertArrayEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = doubleArrayOf(395.26000, 251.79800)
 
-        // Act
+        // When
         val actual = convertTemperature(celsius = 122.11)
 
-        // Assert
+        // Then
         assertArrayEquals(expected, actual)
     }
 }

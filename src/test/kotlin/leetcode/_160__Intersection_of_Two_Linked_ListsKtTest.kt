@@ -11,45 +11,45 @@ internal class _160__Intersection_of_Two_Linked_ListsKtTest {
     inner class FirstImplementation {
         @Test
         fun test1() {
-            // Arrange
+            // Given
             val intersectHead = ListNode(8, ListNode(4, ListNode(5)))
             val aHead = ListNode(4, ListNode(1, intersectHead))
             val bHead = ListNode(5, ListNode(6, ListNode(1, intersectHead)))
             val expected = intersectHead
 
-            // Act
+            // When
             val actual = getIntersectionNode(headA = aHead, headB = bHead)
 
-            // Assert
+            // Then
             assertEquals(expected, actual)
         }
 
         @Test
         fun test2() {
-            // Arrange
+            // Given
             val intersectHead = ListNode(2, ListNode(4))
             val aHead = ListNode(1, ListNode(9, ListNode(1, intersectHead)))
             val bHead = ListNode(3, intersectHead)
             val expected = intersectHead
 
-            // Act
+            // When
             val actual = getIntersectionNode(headA = aHead, headB = bHead)
 
-            // Assert
+            // Then
             assertEquals(expected, actual)
         }
 
         @Test
         fun test3() {
-            // Arrange
+            // Given
             val aHead = ListNode(2, ListNode(6, ListNode(4)))
             val bHead = ListNode(1, ListNode(5))
             val expected = null
 
-            // Act
+            // When
             val actual = getIntersectionNode(headA = aHead, headB = bHead)
 
-            // Assert
+            // Then
             assertEquals(expected, actual)
         }
     }
@@ -58,45 +58,45 @@ internal class _160__Intersection_of_Two_Linked_ListsKtTest {
     inner class ImprovedImplementation {
         @Test
         fun test1() {
-            // Arrange
+            // Given
             val intersectHead = ListNode(8, ListNode(4, ListNode(5)))
             val aHead = ListNode(4, ListNode(1, intersectHead))
             val bHead = ListNode(5, ListNode(6, ListNode(1, intersectHead)))
             val expected = intersectHead
 
-            // Act
+            // When
             val actual = getIntersectionNode(headA = aHead, headB = bHead)
 
-            // Assert
+            // Then
             assertEquals(expected, actual)
         }
 
         @Test
         fun test2() {
-            // Arrange
+            // Given
             val intersectHead = ListNode(2, ListNode(4))
             val aHead = ListNode(1, ListNode(9, ListNode(1, intersectHead)))
             val bHead = ListNode(3, intersectHead)
             val expected = intersectHead
 
-            // Act
+            // When
             val actual = getIntersectionNode(headA = aHead, headB = bHead)
 
-            // Assert
+            // Then
             assertEquals(expected, actual)
         }
 
         @Test
         fun test3() {
-            // Arrange
+            // Given
             val aHead = ListNode(2, ListNode(6, ListNode(4)))
             val bHead = ListNode(1, ListNode(5))
             val expected = null
 
-            // Act
+            // When
             val actual = getIntersectionNode(headA = aHead, headB = bHead)
 
-            // Assert
+            // Then
             assertEquals(expected, actual)
         }
     }

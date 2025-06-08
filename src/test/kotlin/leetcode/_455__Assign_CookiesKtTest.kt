@@ -7,25 +7,25 @@ class _455__Assign_CookiesKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 1
 
-        // Act
+        // When
         val actual = findContentChildren(g = intArrayOf(1, 2, 3), s = intArrayOf(1, 1))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 2
 
-        // Act
+        // When
         val actual = findContentChildren(g = intArrayOf(1, 2), s = intArrayOf(1, 2, 3))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

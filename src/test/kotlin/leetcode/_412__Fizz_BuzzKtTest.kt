@@ -7,31 +7,31 @@ class _412__Fizz_BuzzKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = listOf("1", "2", "Fizz")
 
-        // Act
+        // When
         val actual = fizzBuzz(n = 3)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = listOf("1", "2", "Fizz", "4", "Buzz")
 
-        // Act
+        // When
         val actual = fizzBuzz(n = 5)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = listOf(
             "1",
             "2",
@@ -50,10 +50,10 @@ class _412__Fizz_BuzzKtTest {
             "FizzBuzz"
         )
 
-        // Act
+        // When
         val actual = fizzBuzz(n = 15)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

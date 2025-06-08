@@ -8,13 +8,13 @@
 //
 //    @Test
 //    fun `Convert an IntArray to ListNodes correctly`() {
-//        // Arrange
+//        // Given
 //        val expected = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5, ListNode(6))))))
 //
-//        // Act
+//        // When
 //        val actual = intArrayOf(1, 2, 3, 4, 5, 6).toListNodes()
 //
-//        // Assert
+//        // Then
 //        assertEquals(expected, actual)
 //    }
 //}

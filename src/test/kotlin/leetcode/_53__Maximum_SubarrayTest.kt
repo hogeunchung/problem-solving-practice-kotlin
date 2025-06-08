@@ -7,37 +7,37 @@ internal class _53__Maximum_SubarrayTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 6
 
-        // Act
+        // When
         val actual = maxSubArray(intArrayOf(-2, 1, -3, 4, -1, 2, 1, -5, 4))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 1
 
-        // Act
+        // When
         val actual = maxSubArray(intArrayOf(1))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = 23
 
-        // Act
+        // When
         val actual = maxSubArray(intArrayOf(5, 4, -1, 7, 8))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 

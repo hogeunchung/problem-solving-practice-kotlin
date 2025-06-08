@@ -7,37 +7,37 @@ internal class _55__Jump_GameTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = true
 
-        // Act
+        // When
         val actual = canJump(intArrayOf(2, 3, 1, 1, 4))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = false
 
-        // Act
+        // When
         val actual = canJump(intArrayOf(3, 2, 1, 0, 4))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = true
 
-        // Act
+        // When
         val actual = canJump(intArrayOf(2, 0))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

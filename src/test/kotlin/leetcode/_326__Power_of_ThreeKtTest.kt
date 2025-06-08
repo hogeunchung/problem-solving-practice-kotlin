@@ -7,37 +7,37 @@ class _326__Power_of_ThreeKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = true
 
-        // Act
+        // When
         val actual = isPowerOfThree(n = 27)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = false
 
-        // Act
+        // When
         val actual = isPowerOfThree(n = 0)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = false
 
-        // Act
+        // When
         val actual = isPowerOfThree(n = -1)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

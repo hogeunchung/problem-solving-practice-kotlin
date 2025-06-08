@@ -6,37 +6,37 @@ import org.junit.jupiter.api.Test
 internal class _58__Length_of_Last_WordKtTest {
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 5
 
-        // Act
+        // When
         val actual = lengthOfLastWord(s = "Hello World")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 4
 
-        // Act
+        // When
         val actual = lengthOfLastWord(s = "   fly me   to   the moon  ")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = 6
 
-        // Act
+        // When
         val actual = lengthOfLastWord(s = "luffy is still joyboy")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

@@ -8,7 +8,7 @@ internal class _83__Remove_Duplicates_from_Sorted_ListTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = ListNode(
             `val` = 1,
             next = ListNode(
@@ -16,7 +16,7 @@ internal class _83__Remove_Duplicates_from_Sorted_ListTest {
             )
         )
 
-        // Act
+        // When
         val actual = deleteDuplicates(
             head = ListNode(
                 `val` = 1,
@@ -29,7 +29,7 @@ internal class _83__Remove_Duplicates_from_Sorted_ListTest {
             )
         )
 
-        // Assert
+        // Then
         var expectedCurr: ListNode? = expected
         var actualCurr: ListNode? = actual
         while (expectedCurr != null && actualCurr != null) {
@@ -44,7 +44,7 @@ internal class _83__Remove_Duplicates_from_Sorted_ListTest {
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = ListNode(
             `val` = 1,
             next = ListNode(
@@ -55,7 +55,7 @@ internal class _83__Remove_Duplicates_from_Sorted_ListTest {
             )
         )
 
-        // Act
+        // When
         val actual = deleteDuplicates(
             head = ListNode(
                 `val` = 1,
@@ -74,7 +74,7 @@ internal class _83__Remove_Duplicates_from_Sorted_ListTest {
             )
         )
 
-        // Assert
+        // Then
         var expectedCurr: ListNode? = expected
         var actualCurr: ListNode? = actual
         while (expectedCurr != null && actualCurr != null) {
@@ -89,12 +89,12 @@ internal class _83__Remove_Duplicates_from_Sorted_ListTest {
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = ListNode(
             `val` = 1,
         )
 
-        // Act
+        // When
         val actual = deleteDuplicates(
             head = ListNode(
                 `val` = 1,
@@ -107,7 +107,7 @@ internal class _83__Remove_Duplicates_from_Sorted_ListTest {
             )
         )
 
-        // Assert
+        // Then
         var expectedCurr: ListNode? = expected
         var actualCurr: ListNode? = actual
         while (expectedCurr != null && actualCurr != null) {

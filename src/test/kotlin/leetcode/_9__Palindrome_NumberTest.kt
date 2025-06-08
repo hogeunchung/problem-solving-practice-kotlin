@@ -7,61 +7,61 @@ internal class _9__Palindrome_NumberTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = true
 
-        // Act
+        // When
         val actual = isPalindrome(x = 121)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = false
 
-        // Act
+        // When
         val actual = isPalindrome(x = -121)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = false
 
-        // Act
+        // When
         val actual = isPalindrome(x = 10)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test4() {
-        // Arrange
+        // Given
         val expected = false
 
-        // Act
+        // When
         val actual = isPalindrome(x = 123)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test5() {
-        // Arrange
+        // Given
         val expected = true
 
-        // Act
+        // When
         val actual = isPalindrome(x = 11)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

@@ -7,27 +7,27 @@ class _344__Reverse_StringKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = "olleh".toCharArray()
 
-        // Act
+        // When
         val actual = "hello".toCharArray()
         reverseString(s = actual)
 
-        // Assert
+        // Then
         assertArrayEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = "hannaH".toCharArray()
 
-        // Act
+        // When
         val actual = "Hannah".toCharArray()
         reverseString(s = actual)
 
-        // Assert
+        // Then
         assertArrayEquals(expected, actual)
     }
 }

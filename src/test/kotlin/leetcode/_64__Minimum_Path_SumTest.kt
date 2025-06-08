@@ -7,25 +7,25 @@ internal class _64__Minimum_Path_SumTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 7
 
-        // Act
+        // When
         val actual = minPathSum(arrayOf(intArrayOf(1, 3, 1), intArrayOf(1, 5, 1), intArrayOf(4, 2, 1)))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 12
 
-        // Act
+        // When
         val actual = minPathSum(arrayOf(intArrayOf(1, 2, 3), intArrayOf(4, 5, 6)))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

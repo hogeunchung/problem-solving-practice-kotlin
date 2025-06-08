@@ -7,37 +7,37 @@ internal class _581__Shortest_Unsorted_Continuous_SubarrayTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 5
 
-        // Act
+        // When
         val actual = findUnsortedSubarray(nums = intArrayOf(2, 6, 4, 8, 10, 9, 15))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 0
 
-        // Act
+        // When
         val actual = findUnsortedSubarray(nums = intArrayOf(1, 2, 3, 4))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = 0
 
-        // Act
+        // When
         val actual = findUnsortedSubarray(nums = intArrayOf(1))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

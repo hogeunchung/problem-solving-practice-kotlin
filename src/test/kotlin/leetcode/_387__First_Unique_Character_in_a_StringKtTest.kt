@@ -7,37 +7,37 @@ class _387__First_Unique_Character_in_a_StringKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 0
 
-        // Act
+        // When
         val actual = firstUniqChar(s = "leetcode")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 2
 
-        // Act
+        // When
         val actual = firstUniqChar(s = "loveleetcode")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = -1
 
-        // Act
+        // When
         val actual = firstUniqChar(s = "aabb")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

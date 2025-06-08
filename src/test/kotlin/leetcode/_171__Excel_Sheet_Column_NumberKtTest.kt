@@ -6,37 +6,37 @@ import org.junit.jupiter.api.Test
 class _171__Excel_Sheet_Column_NumberKtTest {
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 1
 
-        // Act
+        // When
         val actual = titleToNumber(columnTitle = "A")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = 28
 
-        // Act
+        // When
         val actual = titleToNumber(columnTitle = "AB")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 701
 
-        // Act
+        // When
         val actual = titleToNumber(columnTitle = "ZY")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

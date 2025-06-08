@@ -7,49 +7,49 @@ internal class _290__Word_PatternKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = true
 
-        // Act
+        // When
         val actual = wordPattern(pattern = "abba", s = "dog cat cat dog")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = false
 
-        // Act
+        // When
         val actual = wordPattern(pattern = "abba", s = "dog cat cat fish")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = false
 
-        // Act
+        // When
         val actual = wordPattern(pattern = "aaaa", s = "dog cat cat dog")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test4() {
-        // Arrange
+        // Given
         val expected = false
 
-        // Act
+        // When
         val actual = wordPattern(pattern = "abba", s = "dog dog dog dog")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

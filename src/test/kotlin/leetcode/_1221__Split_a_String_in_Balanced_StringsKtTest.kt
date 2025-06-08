@@ -6,37 +6,37 @@ import org.junit.jupiter.api.Test
 internal class _1221__Split_a_String_in_Balanced_StringsKtTest {
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 4
 
-        // Act
+        // When
         val actual = balancedStringSplit(s = "RLRRLLRLRL")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 2
 
-        // Act
+        // When
         val actual = balancedStringSplit(s = "RLRRRLLRLL")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = 1
 
-        // Act
+        // When
         val actual = balancedStringSplit(s = "LLLLRRRR")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

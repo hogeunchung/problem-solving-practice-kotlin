@@ -7,37 +7,37 @@ internal class _697__Degree_of_an_ArrayTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 2
 
-        // Act
+        // When
         val actual = findShortestSubArray(nums = intArrayOf(1, 2, 2, 3, 1))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 6
 
-        // Act
+        // When
         val actual = findShortestSubArray(nums = intArrayOf(1, 2, 2, 3, 1, 4, 2))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = 1
 
-        // Act
+        // When
         val actual = findShortestSubArray(nums = intArrayOf(1))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

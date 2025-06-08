@@ -6,31 +6,31 @@ import org.junit.jupiter.api.Test
 internal class _242__Valid_AnagramKtTest {
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = true
 
-        // Act
+        // When
         val actual = isAnagram(
             s = "anagram",
             t = "nagaram"
         )
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = false
 
-        // Act
+        // When
         val actual = isAnagram(
             s = "rat",
             t = "car"
         )
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

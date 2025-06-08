@@ -8,10 +8,10 @@ class _101__Symmetric_TreeKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = true
 
-        // Act
+        // When
         val actual = isSymmetric(
             root = TreeNode(
                 1,
@@ -20,16 +20,16 @@ class _101__Symmetric_TreeKtTest {
             )
         )
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = false
 
-        // Act
+        // When
         val actual = isSymmetric(
             root = TreeNode(
                 1,
@@ -38,7 +38,7 @@ class _101__Symmetric_TreeKtTest {
             )
         )
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

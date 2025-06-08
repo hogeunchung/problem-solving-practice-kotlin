@@ -7,10 +7,10 @@ internal class _200__Number_of_IslandsTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 1
 
-        // Act
+        // When
         val actual = numIslands(
             grid = arrayOf(
                 charArrayOf('1', '1', '1', '1', '0'),
@@ -20,16 +20,16 @@ internal class _200__Number_of_IslandsTest {
             )
         )
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 3
 
-        // Act
+        // When
         val actual = numIslands(
             grid = arrayOf(
                 charArrayOf('1', '1', '0', '0', '0'),
@@ -39,7 +39,7 @@ internal class _200__Number_of_IslandsTest {
             )
         )
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

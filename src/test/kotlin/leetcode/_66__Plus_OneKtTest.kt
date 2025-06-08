@@ -6,37 +6,37 @@ import org.junit.jupiter.api.Test
 internal class _66__Plus_OneKtTest {
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = intArrayOf(1, 2, 4)
 
-        // Act
+        // When
         val actual = plusOne(digits = intArrayOf(1, 2, 3))
 
-        // Assert
+        // Then
         assertArrayEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = intArrayOf(4, 3, 2, 2)
 
-        // Act
+        // When
         val actual = plusOne(digits = intArrayOf(4, 3, 2, 1))
 
-        // Assert
+        // Then
         assertArrayEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = intArrayOf(1, 0)
 
-        // Act
+        // When
         val actual = plusOne(digits = intArrayOf(9))
 
-        // Assert
+        // Then
         assertArrayEquals(expected, actual)
     }
 }

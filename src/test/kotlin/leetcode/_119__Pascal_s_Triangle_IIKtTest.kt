@@ -7,37 +7,37 @@ class _119__Pascal_s_Triangle_IIKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = listOf(1, 3, 3, 1)
 
-        // Act
+        // When
         val actual = getRow(rowIndex = 3)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = listOf(1)
 
-        // Act
+        // When
         val actual = getRow(rowIndex = 0)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = listOf(1, 1)
 
-        // Act
+        // When
         val actual = getRow(rowIndex = 1)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

@@ -7,25 +7,25 @@ internal class _389__Find_the_DifferenceTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 'e'
 
-        // Act
+        // When
         val actual = findTheDifference(s = "abcd", t = "abcde")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 'y'
 
-        // Act
+        // When
         val actual = findTheDifference(s = "", t = "y")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

@@ -7,23 +7,23 @@ internal class _287__Find_the_Duplicate_NumberKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 2
-        // Act
+        // When
         val actual = findDuplicate(intArrayOf(1, 3, 4, 2, 2))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 3
-        // Act
+        // When
         val actual = findDuplicate(intArrayOf(3, 1, 3, 4, 2))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

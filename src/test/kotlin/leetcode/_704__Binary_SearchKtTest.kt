@@ -7,25 +7,25 @@ internal class _704__Binary_SearchKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 4
 
-        // Act
+        // When
         val actual = leetcode.search(intArrayOf(-1, 0, 3, 5, 9, 12), 9)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = -1
 
-        // Act
+        // When
         val actual = leetcode.search(intArrayOf(-1, 0, 3, 5, 9, 12), 2)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

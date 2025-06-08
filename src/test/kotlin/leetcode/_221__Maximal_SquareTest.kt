@@ -7,10 +7,10 @@ internal class _221__Maximal_SquareTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 4
 
-        // Act
+        // When
         val actual = maximalSquare(
             matrix = arrayOf(
                 charArrayOf('1', '0', '1', '0', '0'),
@@ -20,16 +20,16 @@ internal class _221__Maximal_SquareTest {
             )
         )
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 1
 
-        // Act
+        // When
         val actual = maximalSquare(
             matrix = arrayOf(
                 charArrayOf('0', '1'),
@@ -37,23 +37,23 @@ internal class _221__Maximal_SquareTest {
             )
         )
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = 0
 
-        // Act
+        // When
         val actual = maximalSquare(
             matrix = arrayOf(
                 charArrayOf('0'),
             )
         )
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

@@ -6,37 +6,37 @@ import org.junit.jupiter.api.Test
 internal class _908__Smallest_Range_IKtTest {
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 0
 
-        // Act
+        // When
         val actual = smallestRangeI(nums = intArrayOf(1), k = 0)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 6
 
-        // Act
+        // When
         val actual = smallestRangeI(nums = intArrayOf(0, 10), k = 2)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = 0
 
-        // Act
+        // When
         val actual = smallestRangeI(nums = intArrayOf(1, 3, 6), k = 3)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

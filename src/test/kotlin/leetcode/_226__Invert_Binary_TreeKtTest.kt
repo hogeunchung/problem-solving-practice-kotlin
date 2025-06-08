@@ -8,7 +8,7 @@ class _226__Invert_Binary_TreeKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = TreeNode(
             `val` = 4,
             TreeNode(
@@ -21,7 +21,7 @@ class _226__Invert_Binary_TreeKtTest {
             )
         )
 
-        // Act
+        // When
         val input = TreeNode(
             `val` = 4,
             TreeNode(
@@ -35,20 +35,20 @@ class _226__Invert_Binary_TreeKtTest {
         )
         val actual = invertTree(root = input)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = TreeNode(
             `val` = 2,
             TreeNode(`val` = 1),
             TreeNode(`val` = 3)
         )
 
-        // Act
+        // When
         val input = TreeNode(
             `val` = 2,
             TreeNode(`val` = 3),
@@ -56,20 +56,20 @@ class _226__Invert_Binary_TreeKtTest {
         )
         val actual = invertTree(root = input)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = null
 
-        // Act
+        // When
         val input = null
         val actual = invertTree(root = input)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

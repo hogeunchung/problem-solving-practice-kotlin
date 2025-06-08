@@ -7,49 +7,49 @@ internal class _279__Perfect_SquaresTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 3
 
-        // Act
+        // When
         val actual = numSquares(n = 12)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 2
 
-        // Act
+        // When
         val actual = numSquares(n = 13)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = 1
 
-        // Act
+        // When
         val actual = numSquares(n = 1)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test4() {
-        // Arrange
+        // Given
         val expected = 2
 
-        // Act
+        // When
         val actual = numSquares(n = 2)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

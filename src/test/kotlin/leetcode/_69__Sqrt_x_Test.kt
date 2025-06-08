@@ -7,61 +7,61 @@ internal class _69__Sqrt_x_Test {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 2
 
-        // Act
+        // When
         val actual = mySqrt(x = 4)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 2
 
-        // Act
+        // When
         val actual = mySqrt(x = 8)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = 0
 
-        // Act
+        // When
         val actual = mySqrt(x = 0)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test4() {
-        // Arrange
+        // Given
         val expected = 1
 
-        // Act
+        // When
         val actual = mySqrt(x = 1)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test5() {
-        // Arrange
+        // Given
         val expected = 46340
 
-        // Act
+        // When
         val actual = mySqrt(x = 2147395600)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

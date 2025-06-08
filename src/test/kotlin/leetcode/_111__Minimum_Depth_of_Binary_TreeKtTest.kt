@@ -8,55 +8,55 @@ internal class _111__Minimum_Depth_of_Binary_TreeKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 2
 
-        // Act
+        // When
         val actual = minDepth(
             root =
-            TreeNode(
-                3,
-                TreeNode(9),
                 TreeNode(
-                    20,
-                    TreeNode(15),
-                    TreeNode(7)
+                    3,
+                    TreeNode(9),
+                    TreeNode(
+                        20,
+                        TreeNode(15),
+                        TreeNode(7)
+                    )
                 )
-            )
         )
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 5
 
-        // Act
+        // When
         val actual = minDepth(
             root =
-            TreeNode(
-                2,
-                null,
                 TreeNode(
-                    3,
+                    2,
                     null,
                     TreeNode(
-                        4,
+                        3,
                         null,
                         TreeNode(
-                            5,
+                            4,
                             null,
-                            TreeNode(6)
+                            TreeNode(
+                                5,
+                                null,
+                                TreeNode(6)
+                            )
                         )
                     )
                 )
-            )
         )
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

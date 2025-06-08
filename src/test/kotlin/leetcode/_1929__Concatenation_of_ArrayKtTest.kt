@@ -7,25 +7,25 @@ class _1929__Concatenation_of_ArrayKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = intArrayOf(1, 2, 1, 1, 2, 1)
 
-        // Act
+        // When
         val actual = getConcatenation(nums = intArrayOf(1, 2, 1))
 
-        // Assert
+        // Then
         assertArrayEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = intArrayOf(1, 3, 2, 1, 1, 3, 2, 1)
 
-        // Act
+        // When
         val actual = getConcatenation(nums = intArrayOf(1, 3, 2, 1))
 
-        // Assert
+        // Then
         assertArrayEquals(expected, actual)
     }
 }

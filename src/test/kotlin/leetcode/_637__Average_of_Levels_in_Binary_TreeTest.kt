@@ -8,9 +8,9 @@ internal class _637__Average_of_Levels_in_Binary_TreeTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = doubleArrayOf(3.00000, 14.50000, 11.00000)
-        // Act
+        // When
         val actual = averageOfLevels(
             root = TreeNode(
                 `val` = 3,
@@ -23,15 +23,15 @@ internal class _637__Average_of_Levels_in_Binary_TreeTest {
             )
         )
 
-        // Assert
+        // Then
         assertArrayEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = doubleArrayOf(3.00000, 14.50000, 11.00000)
-        // Act
+        // When
         val actual = averageOfLevels(
             root = TreeNode(
                 `val` = 3,
@@ -46,7 +46,7 @@ internal class _637__Average_of_Levels_in_Binary_TreeTest {
             )
         )
 
-        // Assert
+        // Then
         assertArrayEquals(expected, actual)
     }
 }

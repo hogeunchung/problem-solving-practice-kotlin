@@ -8,13 +8,13 @@ class _206__Reverse_Linked_ListKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         var expected: ListNode? = ListNode(5, ListNode(4, ListNode(3, ListNode(2, ListNode(1)))))
 
-        // Act
+        // When
         var actual: ListNode? = reverseList(head = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5))))))
 
-        // Assert
+        // Then
         while (expected != null && actual != null) {
             assertEquals(expected.`val`, actual.`val`)
 
@@ -27,13 +27,13 @@ class _206__Reverse_Linked_ListKtTest {
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         var expected: ListNode? = ListNode(2, ListNode(1))
 
-        // Act
+        // When
         var actual: ListNode? = reverseList(head = ListNode(1, ListNode(2)))
 
-        // Assert
+        // Then
         while (expected != null && actual != null) {
             assertEquals(expected.`val`, actual.`val`)
 
@@ -46,13 +46,13 @@ class _206__Reverse_Linked_ListKtTest {
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         var expected: ListNode? = null
 
-        // Act
+        // When
         var actual: ListNode? = reverseList(head = null)
 
-        // Assert
+        // Then
         while (expected != null && actual != null) {
             assertEquals(expected.`val`, actual.`val`)
 

@@ -7,37 +7,37 @@ internal class _390__Elimination_GameTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 6
 
-        // Act
+        // When
         val actual = lastRemaining(n = 9)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 1
 
-        // Act
+        // When
         val actual = lastRemaining(n = 1)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = 14
 
-        // Act
+        // When
         val actual = lastRemaining(n = 24)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

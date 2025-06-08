@@ -8,10 +8,10 @@ internal class _110__Balanced_Binary_TreeTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = true
 
-        // Act
+        // When
         val actual = isBalanced(
             root = TreeNode(
                 `val` = 3,
@@ -24,16 +24,16 @@ internal class _110__Balanced_Binary_TreeTest {
             )
         )
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = false
 
-        // Act
+        // When
         val actual = isBalanced(
             root = TreeNode(
                 `val` = 1,
@@ -50,7 +50,7 @@ internal class _110__Balanced_Binary_TreeTest {
             )
         )
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

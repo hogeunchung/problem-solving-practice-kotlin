@@ -7,49 +7,49 @@ internal class _139__Word_BreakTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = true
 
-        // Act
+        // When
         val actual = wordBreak(s = "leetcode", wordDict = listOf("leet", "code"))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = true
 
-        // Act
+        // When
         val actual = wordBreak(s = "applepenapple", wordDict = listOf("apple", "pen"))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = false
 
-        // Act
+        // When
         val actual = wordBreak(s = "catsandog", wordDict = listOf("cats", "dog", "sand", "and", "cat"))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test4() {
-        // Arrange
+        // Given
         val expected = false
 
-        // Act
+        // When
         val actual = wordBreak(s = "aaaaaaa", wordDict = listOf("aaaa", "aa"))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

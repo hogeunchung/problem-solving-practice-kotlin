@@ -8,25 +8,25 @@ class _108__Convert_Sorted_Array_to_Binary_Search_TreeKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = TreeNode(0, TreeNode(-10, null, TreeNode(-3)), TreeNode(5, null, TreeNode(9)))
 
-        // Act
+        // When
         val actual = sortedArrayToBST(nums = intArrayOf(-10, -3, 0, 5, 9))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = TreeNode(1, null, TreeNode(3))
 
-        // Act
+        // When
         val actual = sortedArrayToBST(nums = intArrayOf(1, 3))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

@@ -7,37 +7,37 @@ class _892__Surface_Area_of_3D_ShapesKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 34
 
-        // Act
+        // When
         val actual = surfaceArea(arrayOf(intArrayOf(1, 2), intArrayOf(3, 4)))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 32
 
-        // Act
+        // When
         val actual = surfaceArea(arrayOf(intArrayOf(1, 1, 1), intArrayOf(1, 0, 1), intArrayOf(1, 1, 1)))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = 46
 
-        // Act
+        // When
         val actual = surfaceArea(arrayOf(intArrayOf(2, 2, 2), intArrayOf(2, 1, 2), intArrayOf(2, 2, 2)))
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

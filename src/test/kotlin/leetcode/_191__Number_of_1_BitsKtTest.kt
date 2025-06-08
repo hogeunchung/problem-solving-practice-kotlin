@@ -6,37 +6,37 @@ import org.junit.jupiter.api.Test
 internal class _191__Number_of_1_BitsKtTest {
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 3
 
-        // Act
+        // When
         val actual = hammingWeight(n = 0b00000000000000000000000000001011)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 1
 
-        // Act
+        // When
         val actual = hammingWeight(n = 0b00000000000000000000000010000000)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = 31
 
-        // Act
+        // When
         val actual = hammingWeight(n = -3)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

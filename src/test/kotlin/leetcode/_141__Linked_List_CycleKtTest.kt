@@ -8,10 +8,10 @@ class _141__Linked_List_CycleKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = true
 
-        // Act
+        // When
         val nodes = listOf(ListNode(3), ListNode(2), ListNode(0), ListNode(-4))
         nodes[0].next = nodes[1]
         nodes[1].next = nodes[2]
@@ -19,35 +19,35 @@ class _141__Linked_List_CycleKtTest {
         nodes[3].next = nodes[1]
         val actual = hasCycle(head = nodes[0])
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = true
 
-        // Act
+        // When
         val nodes = listOf(ListNode(1), ListNode(2))
         nodes[0].next = nodes[1]
         nodes[1].next = nodes[0]
         val actual = hasCycle(head = nodes[0])
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = false
 
-        // Act
+        // When
         val nodes = listOf(ListNode(1))
         val actual = hasCycle(head = nodes[0])
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

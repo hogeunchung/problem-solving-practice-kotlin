@@ -6,25 +6,25 @@ import org.junit.jupiter.api.Test
 class _70__Climbing_StairsKtTest {
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 2
 
-        // Act
+        // When
         val actual = climbStairs(2)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 3
 
-        // Act
+        // When
         val actual = climbStairs(3)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

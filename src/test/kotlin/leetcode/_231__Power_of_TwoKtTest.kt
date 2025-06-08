@@ -7,49 +7,49 @@ internal class _231__Power_of_TwoKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = true
 
-        // Act
+        // When
         val actual = isPowerOfTwo(n = 1)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = true
 
-        // Act
+        // When
         val actual = isPowerOfTwo(n = 16)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
-    
+
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = false
 
-        // Act
+        // When
         val actual = isPowerOfTwo(n = 3)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test4() {
-        // Arrange
+        // Given
         val expected = false
 
-        // Act
+        // When
         val actual = isPowerOfTwo(n = 0)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

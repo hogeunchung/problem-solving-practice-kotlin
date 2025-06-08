@@ -7,37 +7,37 @@ class _492__Construct_the_RectangleKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = intArrayOf(37, 1)
 
-        // Act
+        // When
         val actual = constructRectangle(area = 37)
 
-        // Assert
+        // Then
         assertArrayEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = intArrayOf(427, 286)
 
-        // Act
+        // When
         val actual = constructRectangle(area = 122122)
 
-        // Assert
+        // Then
         assertArrayEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = intArrayOf(2, 1)
 
-        // Act
+        // When
         val actual = constructRectangle(area = 2)
 
-        // Assert
+        // Then
         assertArrayEquals(expected, actual)
     }
 }

@@ -6,37 +6,37 @@ import org.junit.jupiter.api.Test
 internal class _509__Fibonacci_NumberKtTest {
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 1
 
-        // Act
+        // When
         val actual = fib(2)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 2
 
-        // Act
+        // When
         val actual = fib(3)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun `Test3`() {
-        // Arrange
+        // Given
         val expected = 3
 
-        // Act
+        // When
         val actual = fib(4)
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

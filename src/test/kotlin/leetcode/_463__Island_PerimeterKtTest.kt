@@ -7,10 +7,10 @@ internal class _463__Island_PerimeterKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = 16
 
-        // Act
+        // When
         val actual = islandPerimeter(
             grid = arrayOf(
                 intArrayOf(0, 1, 0, 0),
@@ -20,39 +20,39 @@ internal class _463__Island_PerimeterKtTest {
             )
         )
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = 4
 
-        // Act
+        // When
         val actual = islandPerimeter(
             grid = arrayOf(
                 intArrayOf(1),
             )
         )
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = 4
 
-        // Act
+        // When
         val actual = islandPerimeter(
             grid = arrayOf(
                 intArrayOf(1, 0),
             )
         )
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }

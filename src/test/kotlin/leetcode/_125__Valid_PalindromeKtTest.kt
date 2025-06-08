@@ -7,49 +7,49 @@ class _125__Valid_PalindromeKtTest {
 
     @Test
     fun test1() {
-        // Arrange
+        // Given
         val expected = true
 
-        // Act
+        // When
         val actual = isPalindrome(s = "A man, a plan, a canal: Panama")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test2() {
-        // Arrange
+        // Given
         val expected = false
 
-        // Act
+        // When
         val actual = isPalindrome(s = "race a car")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test3() {
-        // Arrange
+        // Given
         val expected = true
 
-        // Act
+        // When
         val actual = isPalindrome(s = " ")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 
     @Test
     fun test4() {
-        // Arrange
+        // Given
         val expected = false
 
-        // Act
+        // When
         val actual = isPalindrome(s = "0P")
 
-        // Assert
+        // Then
         assertEquals(expected, actual)
     }
 }
