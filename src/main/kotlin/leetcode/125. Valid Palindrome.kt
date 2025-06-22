@@ -2,7 +2,7 @@ package leetcode
 
 fun isPalindrome(s: String): Boolean {
     val refinedChars = s
-        .toLowerCase()
+        .lowercase()
         .filter { it in 'a'..'z' || it in '0'..'9' }
         .toCharArray()
 
