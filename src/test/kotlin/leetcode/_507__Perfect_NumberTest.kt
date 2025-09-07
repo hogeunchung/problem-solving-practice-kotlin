@@ -28,4 +28,16 @@ internal class _507__Perfect_NumberTest {
         // Then
         assertEquals(expected, actual)
     }
+
+    @Test
+    fun test3() {
+        // Given
+        val expected = true
+
+        // When
+        val actual = checkPerfectNumber(num = 6)
+
+        // Then
+        assertEquals(expected, actual)
+    }
 }
