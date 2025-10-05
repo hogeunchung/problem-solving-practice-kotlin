@@ -5,21 +5,29 @@ import leetcode.dataStructure.TreeNode
 class Solution653 {
 
     fun findTarget(root: TreeNode?, k: Int): Boolean {
-        val nodeValueExistences = mutableMapOf<Int, Boolean>()
-        fillNodeValues(root = root, nodeValueExistences = nodeValueExistences)
+        val nodeValues = mutableListOf<Int>()
+        fillNodeValues(root = root, nodeValues = nodeValues)
 
-        for ((nodeValue, _) in nodeValueExistences) {
-            if (nodeValue != k - nodeValue && nodeValueExistences[k - nodeValue] == true) return true
+        var left = 0
+        var right = nodeValues.size - 1
+
+        while (left < right) {
+            val sum = nodeValues[left] + nodeValues[right]
+            when {
+                k < sum -> right--
+                sum < k -> left++
+                else -> return true
+            }
         }
 
         return false
     }
 
-    private fun fillNodeValues(root: TreeNode?, nodeValueExistences: MutableMap<Int, Boolean>) {
+    private fun fillNodeValues(root: TreeNode?, nodeValues: MutableList<Int>) {
         if (root == null) return
 
-        nodeValueExistences[root.`val`] = true
-        fillNodeValues(root = root.left, nodeValueExistences = nodeValueExistences)
-        fillNodeValues(root = root.right, nodeValueExistences = nodeValueExistences)
+        fillNodeValues(root.left, nodeValues = nodeValues)
+        nodeValues.add(root.`val`)
+        fillNodeValues(root.right, nodeValues = nodeValues)
     }
 }
